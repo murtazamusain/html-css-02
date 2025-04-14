@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import 'tailwindcss';
+@theme {
+  --color-bg: #fff9f3;
+  --color-bg-1: #de238e12;
+  --color-bg-2: #f1faf7;
+  --color-bg-3: #eeebfa;
+  --color-bg-4: #030521;
+  --color-bg-5: #f6f6fc;
+  --color-border-1: #5f54c7;
+  --color-border-2: rgba(8, 10, 71, 0.1);
+  --color-7: #8c3bfc;
+  --color-6: #27a6fe;
+  --color-primary: #3a30ba;
+  --color-font: #45426e;
+  --color-heading: #17134a;
+  --font-heading: 'Signika', sans-serif;
+  --radius-primary: 5px;
+  /* font-family: "Signika", sans-serif; */
+}
+@layer {
+  .container {
+    max-width: 1180px;
+    margin-inline: auto;
+  }
+  body {
+    font: normal 400 18px/27px -apple-system, system-ui, 'Segoe UI', Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    color: var(--color-font);
+  }
+  h1 {
+    font: normal bold 71px/71px var(--font-heading);
+    color: var(--color-heading);
+  }
+  h2 {
+    font: normal bold 50px/50px var(--font-heading);
+    color: var(--color-heading);
+  }
+  .h-2 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+  }
+  .dorik-btn {
+    padding: 12px 24px;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    background: var(--color-primary);
+    border-radius: var(--radius-primary);
+  }
+  .main-menu li a {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: var(--color-font);
+    transition: all 400ms;
+  }
+  .main-menu li a:hover {
+    color: var(--color-primary);
+  }
+  .dorik-nav-btn li a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-primary);
+  }
+  .doric-itro-video {
+    justify-content: normal;
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.6);
+    border-radius: 26px 26px 26px 26px;
+    background-image: linear-gradient(
+      130deg,
+      rgba(155, 144, 196, 0.1) 0%,
+      rgba(62, 67, 127, 0.2) 100%
+    );
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    backdrop-filter: blur(5px);
+    padding-right: 20px;
+    min-height: 504px;
+    max-width: 997px;
+    margin-inline: auto;
+  }
+  .dorik-img-brand {
+    filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%)
+      hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);
+  }
+  .un-link {
+    text-decoration: underline;
+    text-decoration-color: var(--color-border-1);
+  }
+  footer {
+    background-image: url(https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/footer-bg-2_71chjwos-1_iyenu6o2.svg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .nav-items {
+    position: relative;
+    padding-bottom: 12px;
+  }
+  .sub-menu {
+    width: 200px;
+    background: #fff;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px;
+    gap: 2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+    position: absolute;
+    top: -20px;
+    left: -50%;
+  }
+  .sub-menu li a {
+    padding: 12px 0px 12px 16px;
+    display: inline-block;
+    width: 100%;
+  }
+  .sub-menu li a:hover {
+    background: #fdf8e0;
+    color: var(--color-heading);
+  }
+  .nav-items:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 45px;
+  }
+}
