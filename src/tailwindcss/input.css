@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@font-face {
+  font-family: 'BG-700';
+  src: url('https://cdn.cmsfly.com/635bcad9b8a74e0091632998/bricolagegrotesque-variablefont_opsz,wdth,wght-XYP-xv.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 @import 'tailwindcss';
 @theme {
   --color-bg: #fff9f3;
@@ -14,7 +22,7 @@
   --color-primary: #3a30ba;
   --color-font: #45426e;
   --color-heading: #17134a;
-  --font-heading: 'Signika', sans-serif;
+  --font-heading: 'BG-700', sans-serif;
   --radius-primary: 5px;
   /* font-family: "Signika", sans-serif; */
 }
